@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 
-var travisReport = require('./lib/index.js');
+/* eslint no-console:0 */
+
+var travisReport = require('../lib/index.js');
 var yargs = require('yargs');
 
-var options = yargs.usage("Usage: $0 <organization> --token <oauth token> --feature <feature> [options]")
-  .required( 1, "*Organization is required*")
+var options = yargs.usage('Usage: $0 <organization> --token <oauth token> --feature <feature> [options]')
+  .required(1, '*Organization is required*')
   .option('token', {
     alias: 't',
     describe: 'github oauth access token'
@@ -36,20 +38,17 @@ var options = yargs.usage("Usage: $0 <organization> --token <oauth token> --feat
   .default('forked', false)
   .help('help')
   .alias('help', 'h')
-  .argv
+  .argv;
 
 var argv = yargs.argv;
 
-travisReport({
-  org: options._[0], 
-  keys: ['name', 'html_url'], 
+var report = travisReport({
+  org: options._[0],
+  keys: ['name', 'html_url'],
   token: argv.token,
   feature: argv.feature
-}, function(res) {
-  res.on('data', function(chunk) {
-    console.log(chunk);
-  });
-  res.on('end', function() {
-    console.log('ended');
-  });
+});
+
+report.on('data', function(chunk) {
+  console.log(chunk);
 });
