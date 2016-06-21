@@ -1,16 +1,17 @@
 {
   "name": "github-travis-report",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "module that given an organization or repo and an attribute produces a report based on versions of the attribute in the .travis.yml file",
   "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "event-stream": "^3.3.3",
     "github": "^1.1.2",
-    "mongodb-repo-list": "file:///Users/brahmgardner/Documents/code/list_repos",
-    "through2": "^2.0.1",
-    "yamljs": "^0.2.7"
+    "mongodb-js-repo-list": "^0.1.0",
+    "yamljs": "^0.2.7",
+    "yargs": "^4.7.1"
   },
   "bin": {
     "github-travis-report": "cli.js"
