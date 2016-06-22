@@ -23,6 +23,7 @@
     "event-stream": "^3.3.3",
     "github": "^1.1.2",
     "mongodb-js-repo-list": "^0.1.0",
+    "sinon": "^1.17.4",
     "yamljs": "^0.2.7",
     "yargs": "^4.7.1"
   },
