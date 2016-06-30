@@ -36,7 +36,7 @@ var options = yargs.usage('Usage: $0 <organization> --token <oauth token> --feat
     alias: 'g',
     describe: 'find repos of a certain pattern'
   })
-  .choices('format', ['json', 'yaml', 'table'])
+  .choices('format', ['json', 'yaml'])
   .choices('keys', ['name', 'html_url'])
   .default('forked', false)
   .help('help')
