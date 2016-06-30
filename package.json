@@ -1,6 +1,6 @@
 {
   "name": "github-travis-report",
-  "description": "module that given an organizationan attribute produces a report based on versions of the attribute in the .travis.yml file",
+  "description": "module that given an organization and an attribute produces a report based on versions of the attribute in the .travis.yml file",
   "version": "0.1.0",
   "scripts": {
     "fmt": "mongodb-js-fmt",
