@@ -1,12 +1,15 @@
 {
   "name": "github-travis-report",
-  "description": "module that given an organization or repo and an attribute produces a report based on versions of the attribute in the .travis.yml file",
-  "version": "0.0.0",
+  "description": "module that given an organization and an attribute produces a report based on versions of the attribute in the .travis.yml file",
+  "version": "0.1.0",
   "scripts": {
     "fmt": "mongodb-js-fmt",
     "check": "mongodb-js-precommit",
     "test": "mocha",
     "ci": "npm run check && npm test"
+  },
+  "bin": {
+    "github-travis-report": "./bin/cli.js"
   },
   "homepage": "http://github.com/mongodb-js/github-travis-report",
   "repository": {
@@ -16,7 +19,16 @@
   "bugs": {
     "url": "git://github.com/mongodb-js/github-travis-report.git/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "event-stream": "^3.3.3",
+    "github": "^1.1.2",
+    "js-yaml": "^3.6.1",
+    "mongodb-extended-json": "^1.6.3",
+    "mongodb-js-repo-list": "^0.1.0",
+    "sinon": "^1.17.4",
+    "yamljs": "^0.2.7",
+    "yargs": "^4.7.1"
+  },
   "devDependencies": {
     "eslint-config-mongodb-js": "^1.0.6",
     "mocha": "^2.3.4",
