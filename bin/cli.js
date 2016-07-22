@@ -58,8 +58,6 @@ function writeData() {
   var output = '';
   if (argv.format === 'yaml') {
     output = yaml.dump(data);
-  // } else if (argv.format === 'table') {
-  //   output = makeTable(data, argv.keys).toString();
   } else {
     output = EJSON.stringify(data, null, 2);
   }
