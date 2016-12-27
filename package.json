@@ -23,7 +23,7 @@
     "event-stream": "^3.3.3",
     "github": "^6.0.4",
     "js-yaml": "^3.6.1",
-    "mongodb-extended-json": "^1.6.3",
+    "mongodb-extended-json": "^1.9.0",
     "mongodb-js-repo-list": "^0.1.0",
     "yamljs": "^0.2.7",
     "yargs": "^6.3.0"
