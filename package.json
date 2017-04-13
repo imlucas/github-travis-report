@@ -26,7 +26,7 @@
     "mongodb-extended-json": "^1.6.3",
     "mongodb-js-repo-list": "^0.1.0",
     "yamljs": "^0.2.7",
-    "yargs": "^6.3.0"
+    "yargs": "^7.1.0"
   },
   "devDependencies": {
     "sinon": "^1.17.4",
