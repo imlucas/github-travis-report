@@ -25,7 +25,7 @@
     "js-yaml": "^3.6.1",
     "mongodb-extended-json": "^1.6.3",
     "mongodb-js-repo-list": "^0.1.0",
-    "yamljs": "^0.2.7",
+    "yamljs": "^0.2.10",
     "yargs": "^6.3.0"
   },
   "devDependencies": {
